@@ -1,11 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Citas
     </ion-title>
+    <ion-buttons slot="end">  <!-- icono que lleva a pag de configuracion -->
+      <ion-button (click)="irConfiguracionOnClick()"  > 
+        <ion-icon name="build-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-button (click)="irGestionOnClick()" >Default</ion-button>
+<ion-content [fullscreen]="true"> 
+  <!-- boton que lleva a pag de gestion -->
+  <ion-button (click)="irGestionOnClick()" >+</ion-button>
 </ion-content>
