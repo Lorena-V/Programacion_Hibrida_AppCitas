@@ -10,8 +10,8 @@ import { CitaFormComponent } from '../cita-form/cita-form.component';
   imports: [CitaListComponent, CitaFormComponent]
 })
 export class OpcionCitasComponent  implements OnInit {
-
-  constructor() { }
+  
+  constructor() {}
 
   ngOnInit() {}
 

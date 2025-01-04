@@ -22,11 +22,15 @@ export class HomePage {
 
   }
 
+  
+
+  // Ruta hacia pag gestión
   irGestionOnClick(){
     console.log("Ir a gestion");
     this.router.navigate(['/gestion']);
   }
 
+  // Ruta hacia pagina configuracion
   irConfiguracionOnClick(){
     console.log("Ir a Configuracion");
     this.router.navigate(['/configuracion']);
