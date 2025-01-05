@@ -1,13 +1,15 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IonCard, IonCardHeader, IonCardTitle, IonItem, IonInput, IonButton } from '@ionic/angular/standalone';
+import { IonCard, IonCardHeader, IonCardTitle, IonItem, IonInput, IonButton,
+  IonText, IonNote } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-cita-form',
   templateUrl: './cita-form.component.html',
   styleUrls: ['./cita-form.component.scss'],
   standalone: true,
-  imports: [IonCard, IonCardHeader, IonCardTitle, IonItem, IonInput, IonButton, FormsModule],
+  imports: [IonCard, IonCardHeader, IonCardTitle, IonItem, IonInput, IonButton,
+     FormsModule, IonText, IonNote ],
   
 })
 
