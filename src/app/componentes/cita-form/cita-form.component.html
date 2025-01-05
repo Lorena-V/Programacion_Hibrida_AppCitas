@@ -5,10 +5,10 @@
     </ion-card-header>
     <form>
       <ion-item>
-        <ion-input name="cita" label="Cita"></ion-input>
+        <ion-input name="texto" label="Texto" [(ngModel)]="textoStr"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input name="autor" label="Autor" placeholder="Mahatma Gandhi"></ion-input>
+        <ion-input name="autor" label="Autor" placeholder="Mahatma Gandhi" [(ngModel)]="autorStr" ></ion-input>
       </ion-item>
       <ion-button type="submit" fill="clear">Agregar +</ion-button>
     </form>

@@ -11,17 +11,18 @@ import { Cita } from 'src/app/modelo/cita';
   standalone: true,
   imports: [CitaListComponent, CitaFormComponent]
 })
+
 export class OpcionCitasComponent  implements OnInit {
   
-  citas:Cita[] = []
+  listaCitas:Cita[] = []
 
   constructor(
-    private citasService:CitasService
+    private citasService:CitasService   // Inyección del servicio
   ) {}
 
   ngOnInit(): void {  // Cuando se carga el GestionPage ocupa el servicio para recuperar las citas en memoria
 
-    this.citas = this.citasService.getCitas()
+    this.listaCitas = this.citasService.getCitas()    // Recupero y guardo los datos
   }
 
 }
