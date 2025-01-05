@@ -14,15 +14,26 @@ import { Cita } from 'src/app/modelo/cita';
 
 export class OpcionCitasComponent  implements OnInit {
   
-  listaCitas:Cita[] = []
+  listaCitas:Cita[] = []    // // Lista para almacenar las citas
 
   constructor(
     private citasService:CitasService   // Inyección del servicio
   ) {}
 
-  ngOnInit(): void {  // Cuando se carga el GestionPage ocupa el servicio para recuperar las citas en memoria
+  ngOnInit() {  // Cuando se carga el GestionPage ocupa el servicio para recuperar las citas en memoria
+    this._actualizar()  // Luego que ingresa una cita, actualiza el arreglo
+  }
 
+  private _actualizar() {
     this.listaCitas = this.citasService.getCitas()    // Recupero y guardo los datos
+  }
+
+  onCreateCita($event: { texto: string; autor: string }) {
+    // Crear una nueva instancia de Cita usando los parámetros recibidos
+    const cita = new Cita($event.texto, $event.autor);
+    this.citasService.agregarCita(cita); // Agregar la cita al servicio
+    this.listaCitas = this.citasService.getCitas(); // Actualizar la lista local
+    this._actualizar()
   }
 
 }

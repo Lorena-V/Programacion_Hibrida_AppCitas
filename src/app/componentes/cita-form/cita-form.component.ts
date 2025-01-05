@@ -24,6 +24,7 @@ export class CitaFormComponent implements OnInit {
   ngOnInit() {}
 
   onClick() {
+    console.log("producto::onClick")
     this.onCreate.emit({ texto: this.textoStr, autor: this.autorStr });
   }
   

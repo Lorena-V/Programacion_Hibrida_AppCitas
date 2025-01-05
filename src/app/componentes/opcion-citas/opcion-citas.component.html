@@ -1,5 +1,5 @@
 <div>
-    <app-cita-form/>
+    <app-cita-form (onCreate)="onCreateCita($event)"/>
     <app-cita-list [citas]="listaCitas" />  
     <!-- Recibe una lista desde el servicio -->
 </div>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonCheckbox, IonList, IonItem, 
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonItem, 
         IonToggle
  } from '@ionic/angular/standalone';
 
@@ -10,8 +10,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonCheckbox, IonList, IonI
   templateUrl: './configuracion.page.html',
   styleUrls: ['./configuracion.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
-    IonCheckbox, IonList, IonItem, IonToggle
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonList, IonItem, IonToggle
   ]
 })
 export class ConfiguracionPage implements OnInit {
