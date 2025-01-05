@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CitaListComponent } from '../cita-list/cita-list.component';
-import { CitaFormComponent } from '../cita-form/cita-form.component';
+import { CitaListComponent } from '../cita-list/cita-list.component'; // clase hijo
+import { CitaFormComponent } from '../cita-form/cita-form.component';   // clase hijo
 
 @Component({
   selector: 'app-opcion-citas',
