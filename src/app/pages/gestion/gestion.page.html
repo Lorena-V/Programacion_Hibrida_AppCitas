@@ -1,9 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>gestion</ion-title>
+    <ion-title>Gestión de citas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <app-opcion-citas/>
+  <!-- <app-opcion-citas/> -->
+   <ul>
+    <li *ngFor="let c of citas" > {{c.texto}} </li>
+   </ul>
+
 </ion-content>
