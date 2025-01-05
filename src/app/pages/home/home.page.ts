@@ -17,26 +17,11 @@ import { RouterModule } from '@angular/router';
 
 export class HomePage {
 
-//   constructor(private router:Router) {
-//     addIcons({buildOutline});
-//       settingsOutline
-// }
   constructor() {
       addIcons({buildOutline});
         settingsOutline
   }
 
-  // Ruta hacia pag gestión
-  // irGestionOnClick(){
-  //   console.log("Ir a gestion");
-  //   this.router.navigate(['/gestion']);
-  // }
-
-  // Ruta hacia pagina configuracion
-  // irConfiguracionOnClick(){
-  //   console.log("Ir a Configuracion");
-  //   this.router.navigate(['/configuracion']);
-  // }
 }
 
 
