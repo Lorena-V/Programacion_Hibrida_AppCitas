@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonBackButton } from '@ionic/angular/standalone';
 import { OpcionCitasComponent } from 'src/app/componentes/opcion-citas/opcion-citas.component';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./gestion.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, OpcionCitasComponent, 
-            CommonModule ]
+            CommonModule, IonButtons, IonBackButton ]
 })
 
 export class GestionPage {  // carga datos con el ciclo de vida
