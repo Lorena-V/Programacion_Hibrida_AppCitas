@@ -27,13 +27,15 @@ export class OpcionCitasComponent  implements OnInit {
   private _actualizar() {
     this.listaCitas = this.citasService.getCitas()    // Recupero y guardo los datos
   }
+    
 
   onCreateCita($event: { texto: string; autor: string }) {
     // Crear una nueva instancia de Cita usando los parámetros recibidos
     const cita = new Cita($event.texto, $event.autor);
     this.citasService.agregarCita(cita); // Agregar la cita al servicio
     this.listaCitas = this.citasService.getCitas(); // Actualizar la lista local
-    this._actualizar()
+    this._actualizar();
+    
   }
 
 }

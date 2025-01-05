@@ -26,6 +26,8 @@ export class CitaFormComponent implements OnInit {
   onClick() {
     console.log("producto::onClick")
     this.onCreate.emit({ texto: this.textoStr, autor: this.autorStr });
+    this.textoStr = '';
+    this.autorStr = '';
   }
   
   }

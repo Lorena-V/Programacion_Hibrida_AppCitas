@@ -9,9 +9,7 @@ import { Cita } from '../modelo/cita';
 export class CitasService {
   
   private _citas: Cita[] = [
-    new Cita("esta es una cita", "este es un autor"),
-    new Cita("esta es otra cita", "este es otro autor"),
-    new Cita("esta es otra otra cita", "este otro otro un autor")
+    new Cita("esta es una cita", "este es un autor")
   ]
 
   constructor() {}
