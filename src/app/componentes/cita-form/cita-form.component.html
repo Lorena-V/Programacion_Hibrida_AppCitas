@@ -27,7 +27,7 @@
         type="submit" 
         fill="clear" 
         (click)="onClick()" 
-        [disabled]="!textoInput.valid || !autorInput.valid">
+        [disabled]="!textoInput.valid && !autorInput.valid">
         Agregar +</ion-button>
     </form>
     
