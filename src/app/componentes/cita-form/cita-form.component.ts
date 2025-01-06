@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IonCard, IonCardHeader, IonCardTitle, IonItem, IonInput, IonButton,
-  IonText, IonNote } from '@ionic/angular/standalone';
+ IonNote } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-cita-form',
@@ -9,7 +9,7 @@ import { IonCard, IonCardHeader, IonCardTitle, IonItem, IonInput, IonButton,
   styleUrls: ['./cita-form.component.scss'],
   standalone: true,
   imports: [IonCard, IonCardHeader, IonCardTitle, IonItem, IonInput, IonButton,
-     FormsModule, IonText, IonNote ],
+     FormsModule, IonNote ],
   
 })
 
